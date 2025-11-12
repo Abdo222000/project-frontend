@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div >
-      <BrowserRouter basename='project-frontend/'>
+      <BrowserRouter basename='/project-frontend'>
         <Navb />
         <Routes>
-          <Route path="/" element={<HomePage/>} />
+          <Route path="/home" element={<HomePage/>} />
           <Route path="/login" element={<LoginPage/>} />
           <Route path="/register" element={<RegisterPage/>} />
           <Route path="/createproject" element={<ProjectsPage />} />
