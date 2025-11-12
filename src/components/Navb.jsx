@@ -21,7 +21,7 @@ function Navb() {
                     <div className="row">
                     <div className='col-12'>
                         <div className="d-flex justify-content-center gap-lg-5 gap-sm-3 flex-wrap mx-5">
-                            <NavLink to={`/project-frontend/`} style={({ isActive }) => ({ color: isActive ? "blue" : "black" })}>Home Page</NavLink>
+                            <NavLink to={`/`} style={({ isActive }) => ({ color: isActive ? "blue" : "black" })}>Home Page</NavLink>
                             <NavLink to={`/login`} style={({ isActive }) => ({ color: isActive ? "blue" : "black" })}>Login Page</NavLink>
                             <NavLink to={`/register`} style={({ isActive }) => ({ color: isActive ? "blue" : "black" })}>Register Page</NavLink>
                             {isLoggedIn ? (<>
