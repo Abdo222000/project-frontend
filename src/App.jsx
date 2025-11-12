@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div >
-      <BrowserRouter basename='/project-frontend/'>
+      <BrowserRouter basename='project-frontend/'>
         <Navb />
         <Routes>
           <Route path="/" element={<HomePage/>} />
@@ -21,7 +21,6 @@ function App() {
           <Route path="/register" element={<RegisterPage/>} />
           <Route path="/createproject" element={<ProjectsPage />} />
           <Route path="/projectslist" element={<Projectslist/>} />
-          
         </Routes>
       </BrowserRouter>
     </div>
