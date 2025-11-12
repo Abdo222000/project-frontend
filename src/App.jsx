@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div >
-      <BrowserRouter basename='/project-frontend'>
+      <BrowserRouter>
         <Navb />
         <Routes>
           <Route path="/home" element={<HomePage/>} />

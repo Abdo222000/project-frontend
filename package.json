@@ -1,8 +1,7 @@
 {
-  "name": "frontend",
+  "name": "project-frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Abdo222000.github.io/project-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
