@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 
-function RegisterPage() {
+function RegisterPage({api_url}) {
   const { 
           register,watch,
           handleSubmit,
@@ -18,7 +18,7 @@ async function myHandleSubmit(data) {
         lname: data.lname,
         phonenum:data.phonenum
       });
-    const API_URL = 'https://project-backend-sigma-lac.vercel.app/api/register/';
+    const API_URL = `${api_url}register/`;
     try {
         const response = await fetch(API_URL, {
             method: 'POST',

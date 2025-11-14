@@ -11,7 +11,8 @@ function Navb() {
         if (answer) {
             localStorage.clear()
             dispatch(logout())   
-            window.location.reload()
+            // window.location.reload();
+            window.location.href = `../`;
         }
         else{return}
     }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 
-function Projectslist() {
+function Projectslist({api_url}) {
     
     const formatDateTime = (isoString) => {
         if (!isoString) return 'N/A';
@@ -23,7 +23,7 @@ function Projectslist() {
     let [siteData,setdata]= useState([]);
 
     async function getdata() {
-        const API_URL = 'https://project-backend-sigma-lac.vercel.app/api/projects/';
+        const API_URL = `${api_url}projects/`;
         let payload_headers = {
             'Content-Type': 'application/json',
             // 'token': `${authToken}`,

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { useDispatch } from "react-redux";
 import { login } from "../store/userslice";
 
-function LoginPage() {
+function LoginPage({api_url}) {
   const { 
         register,
         handleSubmit,
@@ -26,7 +26,7 @@ function LoginPage() {
         username: data.username,
         passwd: data.passwd,
       });
-    const API_URL = 'https://project-backend-sigma-lac.vercel.app/api/login/';
+    const API_URL = `${api_url}login/`;
     try {
         const response = await fetch(API_URL, {
             method: 'POST',

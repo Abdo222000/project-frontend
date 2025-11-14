@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import { useForm } from "react-hook-form"
 
-function ProjectsPage() {
+function ProjectsPage({api_url}) {
     const userState = useSelector((state) => state.user);
     const authToken = localStorage.getItem("userToken"); 
     const currentUserId = userState.user_id;
@@ -19,7 +19,7 @@ function ProjectsPage() {
       return;
     }
     console.log(data, currentUserId)
-    const API_URL = 'https://project-backend-sigma-lac.vercel.app/api/projects/';
+    const API_URL = `${api_url}projects/`;
     const totalTargetString = String(data.totalTarget);
     const payload = {
       title: data.title,
