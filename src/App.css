@@ -1,0 +1,67 @@
+html,body,:root,#root {
+  background-color: #ced4da;
+  height: 100vh;
+}
+.App{
+  background-image: url(assets/background1.jpg);
+  /* background-size:100%; */
+  width: 100%;
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-position: top; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  /* overflow: hidden; */
+}
+#footerh3{
+  font-size: 1.5rem;
+}
+@media (max-width:700px){
+  table>thead>tr>th{
+    font-size: 10px;
+  }
+  table>tbody>tr>td{
+    font-size: 8px;
+  }
+  table>tbody>tr>td>.btn{
+    font-size: 10px;
+  }
+  #footerh3{
+    font-size: 15px;
+  }
+}
+
+/* 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
