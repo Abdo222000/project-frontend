@@ -207,8 +207,10 @@ function EditProject({api_url}) {
                             </div>
                         </div>   
                 </form>
-                <div className="col-3 mx-auto">
+            <div className="col-3 mx-auto ">
+                <center>
                     <button className='btn btn-danger' onClick={cancel}>Cancel Editing</button>
+                </center>
                 </div>
         </div>
     )

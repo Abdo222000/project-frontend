@@ -1,15 +1,18 @@
 html,body,:root,#root {
-  background-color: #ced4da;
-  height: 100vh;
-}
-.App{
+  /* background-color: #ced4da; */
+  /* height: 100vh; */
   background-image: url(assets/background1.jpg);
-  /* background-size:100%; */
-  width: 100%;
-  background-size: cover; /* Scales the image to cover the entire element */
-  background-position: top; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents image repetition */
-  /* overflow: hidden; */
+  background-position: center;
+  background-size: cover;
+}
+#logbtn,#regbtn{
+  background-color: rgb(25, 135, 84);
+  color: white;
+}
+#logbtn:hover,#regbtn:hover{
+  background-color: green;
+  color: white;
+  box-shadow:  0px 0px 20px 1px rgba(0,0,0,1);
 }
 #footerh3{
   font-size: 1.5rem;
