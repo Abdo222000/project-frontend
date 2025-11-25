@@ -53,6 +53,7 @@ function Navb({api_url}) {
                                 <>
                                     <NavLink to={`/login`} style={({ isActive }) => ({ color: isActive ? "red" : "black" })}>Login Page</NavLink>
                                     <NavLink to={`/register`} style={({ isActive }) => ({ color: isActive ? "red" : "black" })}>Register Page</NavLink>
+                                    <NavLink to={`/projectslist`} style={({ isActive }) => ({ color: isActive ? "red" : "black" })}>Projects List Page</NavLink>
                                 </>
                             )}
                             {isLoggedIn && (

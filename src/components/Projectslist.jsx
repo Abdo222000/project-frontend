@@ -45,11 +45,17 @@ function Projectslist({api_url}) {
         setnodata(false);
         setIsLoading(true);
         const API_URL = `${api_url}projects/`;
-        let payload_headers = {
-            'Content-Type': 'application/json',
-            // 'token': `${authToken}`,
-            'Authorization':`token ${authToken}`
-        };
+        let payload_headers= {}
+        if (userState.isLoggedIn) {
+            payload_headers = {
+                'Content-Type': 'application/json',
+                'Authorization':`token ${authToken}`
+            };            
+        } else {
+            payload_headers = {
+                'Content-Type': 'application/json',
+            };            
+        }
         try {
             const response = await fetch(API_URL, {
                 method: 'GET',
@@ -228,10 +234,12 @@ function Projectslist({api_url}) {
                         </td>
                     ) : (
                         <td colSpan="2">
-                            <button className="btn btn-success btn-sm"
-                                    onClick={() => donate_project(proj.id)}>
+                            {userState.isLoggedIn &&
+                                        <button className="btn btn-success btn-sm"
+                                onClick={() => donate_project(proj.id)}>
                                 Donate
-                            </button>
+                            </button>}
+                            {!userState.isLoggedIn && <span className='text-danger'>Sign in to donate</span>}
                         </td>
                     )}
                     {(username == proj.user) ? (    

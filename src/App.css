@@ -31,7 +31,9 @@ html,body,:root,#root {
     font-size: 15px;
   }
 }
-
+form span {
+  color:red;
+}
 /* 
 .logo {
   height: 6em;
