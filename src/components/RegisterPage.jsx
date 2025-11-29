@@ -17,7 +17,7 @@ async function myHandleSubmit(data) {
         fname: data.fname,
         lname: data.lname,
         phonenum:data.phonenum,
-        is_staff:data.staff
+        is_staff:false
       });
     const API_URL = `${api_url}register/`;
     try {
